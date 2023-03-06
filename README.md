@@ -34,7 +34,11 @@ Branch: tree-emoji
 - Index allows us to use bracket notation to update the element that was clicked to a tree
 - Update state using setBoard method with the modified copied array
 
-- As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
+✅ - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
+Branch: winner-loser
+- Randomize winning box index and store in a state variable.
+- Randomize losing box index and store in a state variable.
+- Create some conditional logic to check if selected box is the winning box or the losing box
 - As a user, I can click on a “Play Again” button that will restart the game.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
