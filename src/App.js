@@ -15,7 +15,7 @@ const App = () => {
     "?"
   ])
   const [treasureLocation, setTreasureLocation] = useState(Math.floor(Math.random()* board.length))
-  const [bombLocation, setbombLocation] = useState(Math.floor(Math.random()* board.length))
+  const [bombLocation, setBombLocation] = useState(Math.floor(Math.random()* board.length))
   
   const handleGamePlay = (index) => {
     // alert(index)
@@ -35,6 +35,21 @@ const App = () => {
     setBoard(updatedBoard)
   }
   }
+  const restartGame = () => {
+    setBoard([
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ])
+    setTreasureLocation(Math.floor(Math.random()* board.length))
+    setBombLocation(Math.floor(Math.random()* board.length))
+  }
   return (
     <>
       <h1>Treasure Hunt Game</h1>
@@ -48,6 +63,7 @@ const App = () => {
         />
       })}
       </div>
+      <div className="button" onClick={restartGame}><button >Play Again</button></div>
     </>
   )
 }
