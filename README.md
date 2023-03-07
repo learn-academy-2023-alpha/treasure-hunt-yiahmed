@@ -41,7 +41,7 @@ Branch: winner-loser
 - Create some conditional logic to check if selected box is the winning box or the losing box
 - As a user, I can click on a “Play Again” button that will restart the game.
 Branch: play-again
-- Create a button that refreshes the game board back to its original state.
+✅  - Create a button that refreshes the game board back to its original state.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at five and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
 - As a user, I can see a message informing me that I lost the game if I select the square that contains the bomb.
